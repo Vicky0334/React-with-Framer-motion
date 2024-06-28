@@ -1,5 +1,5 @@
 
-import { delay, motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import React from 'react'
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
   //   }
   // }
   
+ 
   return (
     <div>
       <motion.div id="box"
@@ -34,11 +35,12 @@ const App = () => {
          scale: 1.2,
          rotate: 360,
          transition: {
-           duration:1,
+           duration:0.5,
            ease: 'easeOut',
          },
        }}
        dragConstraints={{ left: 0, right:900, top:0, bottom:50 }}
+    
       >
      </motion.div>
     </div>
